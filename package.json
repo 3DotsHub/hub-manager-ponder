@@ -1,0 +1,27 @@
+{
+	"name": "hub-manager-ponder",
+	"version": "0.0.1",
+	"private": false,
+	"license": "MIT",
+	"scripts": {
+		"dev": "ponder dev",
+		"start": "ponder start",
+		"codegen": "ponder codegen",
+		"lint": "eslint .",
+		"eslint-config-ponder": "workspace:*",
+		"typecheck": "tsc"
+	},
+	"dependencies": {
+		"@3dotshub/hub-manager": "file:../hub-manager",
+		"@ponder/core": "^0.4.36",
+		"viem": "^2.13.8"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.2",
+		"eslint": "^9.4.0",
+		"typescript": "^5.3.2"
+	},
+	"engines": {
+		"node": ">=18.14"
+	}
+}
